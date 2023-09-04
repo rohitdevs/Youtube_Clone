@@ -1,4 +1,6 @@
 const apiKey="AIzaSyBpt29jCyXSKVeeB2GRg3tdcKamzLB47Ms";
+AIzaSyDvo2p4xMEI3GC-PWH02_0OAIN1h88k4rE
+
 const baseUrl="https://www.googleapis.com/youtube/v3";
 
 
@@ -22,6 +24,10 @@ function formatYouTubeViews(number) {
     }
 }
 
+function navigateToVideoDetails(videoId) {
+  document.cookie = `id=${videoId}; path=/play-video.html`;
+  window.location.href = "/play-video.html";
+}
 
 function calculateTheTimeGap(publishTime)
 {
@@ -74,7 +80,7 @@ videosList.forEach((video) => {
   videoContainer.className="video-content-cover";
   videoContainer.innerHTML=`
   <div class="video-content">
-  <a href="https://www.youtube.com/watch?v=FNhjbNQ8Sik" class="video-box">
+  <a href="#" class="video-box">
       <img src="${video.snippet.thumbnails.high.url}" alt="">
   </a>
   <div class="video-details">
@@ -97,6 +103,9 @@ videosList.forEach((video) => {
   </div>
 </div>
  `;
+ videoContainer.addEventListener("click", () => {
+  navigateToVideoDetails(video.id.videoId);
+});
  container.appendChild(videoContainer);
 });
 }
