@@ -1,6 +1,6 @@
-const apiKey="AIzaSyBpt29jCyXSKVeeB2GRg3tdcKamzLB47Ms";
-AIzaSyDvo2p4xMEI3GC-PWH02_0OAIN1h88k4rE
+const apiKey="AIzaSyDvo2p4xMEI3GC-PWH02_0OAIN1h88k4rE";
 
+//AIzaSyBpt29jCyXSKVeeB2GRg3tdcKamzLB47Ms
 const baseUrl="https://www.googleapis.com/youtube/v3";
 
 
