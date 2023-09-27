@@ -1,5 +1,6 @@
-const apiKey="AIzaSyDvo2p4xMEI3GC-PWH02_0OAIN1h88k4rE";
-
+const apiKey="AIzaSyBpt29jCyXSKVeeB2GRg3tdcKamzLB47Ms";
+//AIzaSyDvo2p4xMEI3GC-PWH02_0OAIN1h88k4rE
+//AIzaSyAwoLey4IDTAJYFhXW9XouU0dvsNVYHPDM
 //AIzaSyBpt29jCyXSKVeeB2GRg3tdcKamzLB47Ms
 const baseUrl="https://www.googleapis.com/youtube/v3";
 
@@ -26,7 +27,7 @@ function formatYouTubeViews(number) {
 
 function navigateToVideoDetails(videoId) {
   document.cookie = `id=${videoId}; path=/play-video.html`;
-  window.location.href = "/play-video.html";
+  window.location.href = "/video-details.html";
 }
 
 function calculateTheTimeGap(publishTime)

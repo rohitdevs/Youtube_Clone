@@ -125,6 +125,7 @@ hr {
     background-color: #313131;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .search-container .mic {
